@@ -34,7 +34,7 @@ public class JavaConfig {
         LocalContainerEntityManagerFactoryBean em
                 = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(dataSource());
-        em.setPackagesToScan("com.baeldung.persistence.model");
+        em.setPackagesToScan("web.model");
         em.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
         em.setJpaProperties(additionalProperties());
 
